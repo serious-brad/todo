@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="wrapper d-flex justify-content-md-center align-items-center" id="todoApp">
+        <div>
+            <h1 class="text-center mb-4">Todo App</h1>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control todo__add-input" placeholder="Enter your todo item" id="todoAddInput" />
+                <button class="btn btn-outline-secondary todo__add-button" type="button" id="todoAddButton">Add +</button>
+            </div>
+
+            <div class="todo__list" id="todoList">
+            </div>
+        </div>
+
+        <div id="toaster"></div>
+    </div>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
